@@ -3,15 +3,28 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portfolio | Ahmad Iqbal</title>
+<title>Portfolio Ahmad Iqbal | UI/UX & Web Designer</title>
+
+<!-- SEO Meta -->
+<meta name="description" content="Portfolio Ahmad Iqbal, UI/UX & Web Designer yang fokus pada desain modern, clean, dan user-friendly. Lihat karya, layanan, dan hubungi saya untuk proyek Anda.">
+<meta name="keywords" content="Ahmad Iqbal, Portfolio, UI UX Designer, Web Designer, Web Developer, Branding, Desain Modern, Responsive Website">
+<meta name="author" content="Ahmad Iqbal">
+
+<!-- Open Graph / Social Media -->
+<meta property="og:title" content="Portfolio Ahmad Iqbal | UI/UX & Web Designer">
+<meta property="og:description" content="Portfolio Ahmad Iqbal, UI/UX & Web Designer yang fokus pada desain modern, clean, dan user-friendly.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://yourportfolio.com/">
+<meta property="og:image" content="https://files.catbox.moe/xwsonc.jpg">
+
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header class="header">
   <div class="logo">Porto<span>folio</span></div>
-  <div class="menu-toggle">☰</div>
-  <nav class="nav-menu">
+  <div class="menu-toggle" aria-label="Menu">☰</div>
+  <nav class="nav-menu" role="navigation">
     <a href="#beranda">Beranda</a>
     <a href="#tentang">Tentang</a>
     <a href="#kemampuan">Kemampuan</a>
@@ -28,13 +41,12 @@
       <p class="subjudul-beranda">UI/UX & Web Designer</p>
       <div class="tombol-beranda">
         <a href="#kontak" class="btn-utama">Hire Me</a>
-        <a href="#" class="btn-sekunder">Download CV</a>
+        <a href="#" class="btn-sekunder" download="CV_Ahmad_Iqbal.pdf">Download CV</a>
       </div>
     </div>
     <div class="kanan-beranda">
-      <img src="https://files.catbox.moe/xwsonc.jpg" class="avatar" alt="Foto Profile">
+      <img src="https://files.catbox.moe/xwsonc.jpg" class="avatar" alt="Foto Profile Ahmad Iqbal">
     </div>
-    
   </div>
 </section>
 
@@ -43,8 +55,8 @@
   <h2>Tentang Saya</h2>
   <div class="kontainer-tentang">
     <div class="kanan-tentang">
-      <p>Project Ahmad Iqbal <a href="https://dzuraganstorev1.vercel.app/" target="_blank">Klik di sini</a></p>
-      <p>Saya adalah designer yang fokus pada desain modern, clean dan user-friendly untuk meningkatkan brand & bisnis.</p>
+      <p>Project Ahmad Iqbal: <a href="https://dzuraganstorev1.vercel.app/" target="_blank" rel="noopener">Klik di sini</a></p>
+      <p>Saya adalah designer yang fokus pada desain modern, clean, dan user-friendly untuk meningkatkan brand & bisnis.</p>
     </div>
   </div>
 </section>
@@ -70,21 +82,21 @@
 <section class="layanan reveal" id="layanan">
   <h2>Layanan</h2>
   <div class="grid">
-    <div class="card">
-      <i>🎨</i>
+    <article class="card">
+      <i aria-hidden="true">🎨</i>
       <h3>UI Design</h3>
       <p>Desain modern dan profesional.</p>
-    </div>
-    <div class="card">
-      <i>💻</i>
+    </article>
+    <article class="card">
+      <i aria-hidden="true">💻</i>
       <h3>Web Development</h3>
       <p>Website responsive & SEO friendly.</p>
-    </div>
-    <div class="card">
-      <i>🚀</i>
+    </article>
+    <article class="card">
+      <i aria-hidden="true">🚀</i>
       <h3>Branding</h3>
       <p>Membangun identitas brand kuat.</p>
-    </div>
+    </article>
   </div>
 </section>
 
@@ -92,17 +104,17 @@
 <section class="kontak reveal" id="kontak">
   <h2>Kontak</h2>
   <div class="kontak-box">
-    <p>Email: duniabisnisdigital18@gmail.com</p>
-    <p>WhatsApp: 083199137512</p>
+    <p>Email: <a href="mailto:duniabisnisdigital18@gmail.com">duniabisnisdigital18@gmail.com</a></p>
+    <p>WhatsApp: <a href="https://wa.me/6283199137512" target="_blank" rel="noopener">083199137512</a></p>
     <a href="mailto:duniabisnisdigital18@gmail.com" class="btn-utama">Kirim Email</a>
     <a href="https://wa.me/6283199137512" target="_blank" class="btn-sekunder">Chat WhatsApp</a>
   </div>
 </section>
 
 <footer>
-  © 2026 Ahmad Iqbal | All Rights Reserved
+  <p>© 2026 Ahmad Iqbal | All Rights Reserved</p>
 </footer>
 
 <script src="script.js"></script>
 </body>
-</html>
+    </html>
