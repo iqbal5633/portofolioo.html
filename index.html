@@ -3,118 +3,258 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portfolio Ahmad Iqbal | UI/UX & Web Designer</title>
 
-<!-- SEO Meta -->
-<meta name="description" content="Portfolio Ahmad Iqbal, UI/UX & Web Designer yang fokus pada desain modern, clean, dan user-friendly. Lihat karya, layanan, dan hubungi saya untuk proyek Anda.">
-<meta name="keywords" content="Ahmad Iqbal, Portfolio, UI UX Designer, Web Designer, Web Developer, Branding, Desain Modern, Responsive Website">
-<meta name="author" content="Ahmad Iqbal">
+<title>Nama Kamu | Frontend Developer Indonesia</title>
+<meta name="description" content="Portfolio resmi Nama Kamu - Frontend Developer spesialis HTML, CSS, JavaScript. Website modern, responsive dan SEO friendly.">
+<meta name="keywords" content="Frontend Developer Indonesia, Jasa Website, HTML CSS JavaScript, Portfolio Web Developer">
+<meta name="author" content="Nama Kamu">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0f172a">
 
-<!-- Open Graph / Social Media -->
-<meta property="og:title" content="Portfolio Ahmad Iqbal | UI/UX & Web Designer">
-<meta property="og:description" content="Portfolio Ahmad Iqbal, UI/UX & Web Designer yang fokus pada desain modern, clean, dan user-friendly.">
+<!-- Open Graph -->
+<meta property="og:title" content="Nama Kamu | Frontend Developer">
+<meta property="og:description" content="Website modern, responsive dan SEO optimized.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://yourportfolio.com/">
-<meta property="og:image" content="https://files.catbox.moe/xwsonc.jpg">
+<meta property="og:locale" content="id_ID">
 
-<link rel="stylesheet" href="style.css">
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Nama Kamu | Frontend Developer">
+<meta name="twitter:description" content="Portfolio dan jasa pembuatan website profesional.">
+
+<!-- Schema Markup -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Nama Kamu",
+  "jobTitle": "Frontend Developer",
+  "url": "https://domainkamu.com",
+  "sameAs": [
+    "https://instagram.com/a_bocillwbzz"
+  ]
+}
+</script>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth;}
+body{font-family:'Poppins',sans-serif;background:#0f172a;color:#fff;line-height:1.7;}
+.container{width:90%;max-width:1100px;margin:auto;}
+
+header{
+position:fixed;width:100%;
+background:rgba(15,23,42,0.95);
+backdrop-filter:blur(10px);
+padding:15px 0;
+z-index:1000;
+}
+
+.nav{display:flex;justify-content:space-between;align-items:center;}
+
+.logo{display:flex;align-items:center;gap:10px;font-weight:600;}
+.logo-icon{background:#38bdf8;color:#000;padding:6px 10px;border-radius:6px;}
+
+nav{display:flex;}
+nav a{color:white;text-decoration:none;margin-left:20px;font-size:14px;transition:.3s;}
+nav a:hover{color:#38bdf8;}
+
+.menu-toggle{display:none;font-size:26px;cursor:pointer;}
+
+.hero{height:100vh;display:flex;align-items:center;text-align:center;}
+.hero-content{margin-top:70px;}
+.hero h2{font-size:38px;}
+.hero span{color:#38bdf8;}
+.hero p{margin:20px auto;max-width:600px;color:#cbd5e1;}
+
+.hero-buttons{display:flex;justify-content:center;gap:15px;flex-wrap:wrap;}
+
+.btn{
+padding:12px 25px;
+background:#38bdf8;
+color:black;
+border-radius:6px;
+text-decoration:none;
+font-weight:600;
+transition:.3s;
+}
+.btn:hover{background:#0ea5e9;}
+
+.btn-outline{
+padding:12px 25px;
+border:2px solid #38bdf8;
+color:#38bdf8;
+border-radius:6px;
+text-decoration:none;
+transition:.3s;
+}
+.btn-outline:hover{background:#38bdf8;color:black;}
+
+.section{padding:100px 0;text-align:center;}
+.dark{background:#1e293b;}
+
+.section-title{margin-bottom:20px;font-size:28px;}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+margin-top:40px;
+}
+
+.card{
+background:#1e293b;
+padding:25px;
+border-radius:12px;
+transition:.3s;
+}
+.card:hover{transform:translateY(-5px);}
+
+.skill{margin:25px 0;text-align:left;}
+.skill-bar{background:#334155;height:8px;border-radius:5px;overflow:hidden;}
+.skill-fill{height:100%;border-radius:5px;animation:grow 2s ease forwards;}
+.html{width:95%;background:#e34c26;}
+.css{width:90%;background:#264de4;}
+.js{width:80%;background:#f0db4f;}
+
+@keyframes grow{from{width:0;}}
+
+footer{text-align:center;padding:20px;background:#0f172a;color:#94a3b8;}
+
+/* Mobile */
+@media(max-width:768px){
+
+nav{
+position:absolute;
+top:60px;
+right:20px;
+background:#1e293b;
+flex-direction:column;
+width:200px;
+padding:20px;
+border-radius:10px;
+display:none;
+}
+
+nav a{margin:10px 0;}
+
+nav.active{display:flex;}
+
+.menu-toggle{display:block;}
+
+.hero h2{font-size:26px;}
+
+.section{padding:70px 0;}
+}
+</style>
 </head>
+
 <body>
 
-<header class="header">
-  <div class="logo">Porto<span>folio</span></div>
-  <div class="menu-toggle" aria-label="Menu">☰</div>
-  <nav class="nav-menu" role="navigation">
-    <a href="#beranda">Beranda</a>
-    <a href="#tentang">Tentang</a>
-    <a href="#kemampuan">Kemampuan</a>
-    <a href="#layanan">Layanan</a>
-    <a href="#kontak">Kontak</a>
-  </nav>
+<header>
+<div class="container nav">
+<div class="logo">
+<div class="logo-icon">AI</div>
+<span>Ahmad Iqbal</span>
+</div>
+
+<div class="menu-toggle" id="menu-toggle">☰</div>
+
+<nav id="nav-menu">
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</nav>
+</div>
 </header>
 
-<!-- BERANDA -->
-<section class="beranda reveal" id="beranda">
-  <div class="kontainer-beranda">
-    <div class="kiri-beranda">
-      <h1 class="judul-beranda">Halo, Saya <span class="teks-gradien">Ahmad Iqbal</span></h1>
-      <p class="subjudul-beranda">UI/UX & Web Designer</p>
-      <div class="tombol-beranda">
-        <a href="#kontak" class="btn-utama">Hire Me</a>
-        <a href="#" class="btn-sekunder" download="CV_Ahmad_Iqbal.pdf">Download CV</a>
-      </div>
-    </div>
-    <div class="kanan-beranda">
-      <img src="https://files.catbox.moe/xwsonc.jpg" class="avatar" alt="Foto Profile Ahmad Iqbal">
-    </div>
-  </div>
+<section class="hero">
+<div class="container hero-content">
+<h1>Hi, I'm <span>Ahmad Iqbal</span></h1>
+<p>Frontend Developer yang fokus membangun website modern, responsive, dan SEO friendly dengan clean code.</p>
+
+<div class="hero-buttons">
+<a href="#projects" class="btn">View Projects</a>
+<a href="https://dzuraganstorev1.vercel.app/"
+target="_blank"
+class="btn-outline">
+  Order Project
+</a>
+</div>
+</div>
 </section>
 
-<!-- TENTANG -->
-<section class="tentang reveal" id="tentang">
-  <h2>Tentang Saya</h2>
-  <div class="kontainer-tentang">
-    <div class="kanan-tentang">
-      <p>Project Ahmad Iqbal: <a href="https://dzuraganstorev1.vercel.app/" target="_blank" rel="noopener">Klik di sini</a></p>
-      <p>Saya adalah designer yang fokus pada desain modern, clean, dan user-friendly untuk meningkatkan brand & bisnis.</p>
-    </div>
-  </div>
+<section id="about" class="section">
+<div class="container">
+<h2 class="section-title">About Me</h2>
+<p>Saya membangun website cepat, modern dan scalable menggunakan HTML, CSS, dan JavaScript.</p>
+</div>
 </section>
 
-<!-- KEMAMPUAN -->
-<section class="kemampuan reveal" id="kemampuan">
-  <h2>Kemampuan</h2>
-  <div class="skill">
-    <span>HTML <span>100%</span></span>
-    <div class="progress"><div data-width="100%"></div></div>
-  </div>
-  <div class="skill">
-    <span>CSS <span>95%</span></span>
-    <div class="progress"><div data-width="85%"></div></div>
-  </div>
-  <div class="skill">
-    <span>JavaScript <span>90%</span></span>
-    <div class="progress"><div data-width="75%"></div></div>
-  </div>
+<section id="skills" class="section dark">
+<div class="container">
+<h2 class="section-title">Skills</h2>
+
+<div class="skill">
+<p>HTML</p>
+<div class="skill-bar"><div class="skill-fill html"></div></div>
+</div>
+
+<div class="skill">
+<p>CSS</p>
+<div class="skill-bar"><div class="skill-fill css"></div></div>
+</div>
+
+<div class="skill">
+<p>JavaScript</p>
+<div class="skill-bar"><div class="skill-fill js"></div></div>
+</div>
+
+</div>
 </section>
 
-<!-- LAYANAN -->
-<section class="layanan reveal" id="layanan">
-  <h2>Layanan</h2>
-  <div class="grid">
-    <article class="card">
-      <i aria-hidden="true">🎨</i>
-      <h3>UI Design</h3>
-      <p>Desain modern dan profesional.</p>
-    </article>
-    <article class="card">
-      <i aria-hidden="true">💻</i>
-      <h3>Web Development</h3>
-      <p>Website responsive & SEO friendly.</p>
-    </article>
-    <article class="card">
-      <i aria-hidden="true">🚀</i>
-      <h3>Branding</h3>
-      <p>Membangun identitas brand kuat.</p>
-    </article>
-  </div>
+<section id="projects" class="section">
+<div class="container">
+<h2 class="section-title">Projects</h2>
+
+<div class="grid">
+<div class="card">
+<h3>Company Profile</h3>
+<p>Website profesional untuk branding bisnis.</p>
+</div>
+
+<div class="card">
+<h3>Landing Page</h3>
+<p>Landing page high conversion & SEO ready.</p>
+</div>
+
+<div class="card">
+<h3>E-commerce UI</h3>
+<p>Design toko online modern & responsive.</p>
+</div>
+</div>
+</div>
 </section>
 
-<!-- KONTAK -->
-<section class="kontak reveal" id="kontak">
-  <h2>Kontak</h2>
-  <div class="kontak-box">
-    <p>Email: <a href="mailto:duniabisnisdigital18@gmail.com">duniabisnisdigital18@gmail.com</a></p>
-    <p>WhatsApp: <a href="https://wa.me/6283199137512" target="_blank" rel="noopener">083199137512</a></p>
-    <a href="mailto:duniabisnisdigital18@gmail.com" class="btn-utama">Kirim Email</a>
-    <a href="https://wa.me/6283199137512" target="_blank" class="btn-sekunder">Chat WhatsApp</a>
-  </div>
+<section id="contact" class="section dark">
+<div class="container">
+<h2 class="section-title">Contact</h2>
+<p>Email: duniabisnisdigital18@gmail.com</p>
+<p>Instagram: @a_bocillwbzz</p>
+</div>
 </section>
 
 <footer>
-  <p>© 2026 Ahmad Iqbal | All Rights Reserved</p>
+© 2026 Nama Kamu. All rights reserved.
 </footer>
 
-<script src="script.js"></script>
+<script>
+const toggle=document.getElementById("menu-toggle");
+const nav=document.getElementById("nav-menu");
+toggle.addEventListener("click",()=>{nav.classList.toggle("active");});
+</script>
+
 </body>
-    </html>
+  </html>
