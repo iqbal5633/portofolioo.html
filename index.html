@@ -1,260 +1,142 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Nama Kamu | Frontend Developer Indonesia</title>
-<meta name="description" content="Portfolio resmi Nama Kamu - Frontend Developer spesialis HTML, CSS, JavaScript. Website modern, responsive dan SEO friendly.">
-<meta name="keywords" content="Frontend Developer Indonesia, Jasa Website, HTML CSS JavaScript, Portfolio Web Developer">
-<meta name="author" content="Nama Kamu">
-<meta name="robots" content="index, follow">
-<meta name="theme-color" content="#0f172a">
-
-<!-- Open Graph -->
-<meta property="og:title" content="Nama Kamu | Frontend Developer">
-<meta property="og:description" content="Website modern, responsive dan SEO optimized.">
-<meta property="og:type" content="website">
-<meta property="og:locale" content="id_ID">
-
-<!-- Twitter -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Nama Kamu | Frontend Developer">
-<meta name="twitter:description" content="Portfolio dan jasa pembuatan website profesional.">
-
-<!-- Schema Markup -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Nama Kamu",
-  "jobTitle": "Frontend Developer",
-  "url": "https://domainkamu.com",
-  "sameAs": [
-    "https://instagram.com/a_bocillwbzz"
-  ]
-}
-</script>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-<style>
-*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth;}
-body{font-family:'Poppins',sans-serif;background:#0f172a;color:#fff;line-height:1.7;}
-.container{width:90%;max-width:1100px;margin:auto;}
-
-header{
-position:fixed;width:100%;
-background:rgba(15,23,42,0.95);
-backdrop-filter:blur(10px);
-padding:15px 0;
-z-index:1000;
-}
-
-.nav{display:flex;justify-content:space-between;align-items:center;}
-
-.logo{display:flex;align-items:center;gap:10px;font-weight:600;}
-.logo-icon{background:#38bdf8;color:#000;padding:6px 10px;border-radius:6px;}
-
-nav{display:flex;}
-nav a{color:white;text-decoration:none;margin-left:20px;font-size:14px;transition:.3s;}
-nav a:hover{color:#38bdf8;}
-
-.menu-toggle{display:none;font-size:26px;cursor:pointer;}
-
-.hero{height:100vh;display:flex;align-items:center;text-align:center;}
-.hero-content{margin-top:70px;}
-.hero h2{font-size:38px;}
-.hero span{color:#38bdf8;}
-.hero p{margin:20px auto;max-width:600px;color:#cbd5e1;}
-
-.hero-buttons{display:flex;justify-content:center;gap:15px;flex-wrap:wrap;}
-
-.btn{
-padding:12px 25px;
-background:#38bdf8;
-color:black;
-border-radius:6px;
-text-decoration:none;
-font-weight:600;
-transition:.3s;
-}
-.btn:hover{background:#0ea5e9;}
-
-.btn-outline{
-padding:12px 25px;
-border:2px solid #38bdf8;
-color:#38bdf8;
-border-radius:6px;
-text-decoration:none;
-transition:.3s;
-}
-.btn-outline:hover{background:#38bdf8;color:black;}
-
-.section{padding:100px 0;text-align:center;}
-.dark{background:#1e293b;}
-
-.section-title{margin-bottom:20px;font-size:28px;}
-
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-margin-top:40px;
-}
-
-.card{
-background:#1e293b;
-padding:25px;
-border-radius:12px;
-transition:.3s;
-}
-.card:hover{transform:translateY(-5px);}
-
-.skill{margin:25px 0;text-align:left;}
-.skill-bar{background:#334155;height:8px;border-radius:5px;overflow:hidden;}
-.skill-fill{height:100%;border-radius:5px;animation:grow 2s ease forwards;}
-.html{width:95%;background:#e34c26;}
-.css{width:90%;background:#264de4;}
-.js{width:80%;background:#f0db4f;}
-
-@keyframes grow{from{width:0;}}
-
-footer{text-align:center;padding:20px;background:#0f172a;color:#94a3b8;}
-
-/* Mobile */
-@media(max-width:768px){
-
-nav{
-position:absolute;
-top:60px;
-right:20px;
-background:#1e293b;
-flex-direction:column;
-width:200px;
-padding:20px;
-border-radius:10px;
-display:none;
-}
-
-nav a{margin:10px 0;}
-
-nav.active{display:flex;}
-
-.menu-toggle{display:block;}
-
-.hero h2{font-size:26px;}
-
-.section{padding:70px 0;}
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AHMAD IQBAL | JASA PEMBUATAN WEBSITE</title>
+    <meta name="description" content="Portfolio AHMAD IQBAL - Creative Technologist yang menggabungkan web development, UI/UX,">
+    <meta name="author" content="AHMAD IQBAL">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
+<body class="bg-[#050505] text-white">
 
-<body>
+    <nav class="fixed top-5 left-1/2 -translate-x-1/2 z-[100] w-[95%] max-w-[800px]">
+        <div class="glass py-3 px-8 rounded-full flex justify-between items-center border border-white/10">
+            <div class="text-xl font-bold tracking-tighter">AI</div>
+            <div class="hidden md:flex gap-6 text-sm font-medium text-gray-400">
+                <a href="#home" class="hover:text-white transition">Home</a>
+                <a href="#about" class="hover:text-white transition">About</a>
+                <a href="#experience" class="hover:text-white transition">Experience</a>
+                <a href="#projects" class="hover:text-white transition">Projects</a>
+                <a href="#contact" class="hover:text-white transition">Contact</a>
+            </div>
+            <div class="cursor-pointer" id="theme-btn">🌙</div>
+        </div>
+    </nav>
 
-<header>
-<div class="container nav">
-<div class="logo">
-<div class="logo-icon">AI</div>
-<span>Ahmad Iqbal</span>
-</div>
+    <section id="home" class="min-h-screen flex flex-col md:flex-row items-center justify-center px-6 gap-10 pt-20">
+        <div class="max-w-xl text-center md:text-left" data-aos="fade-right">
+            <p class="text-cyan-400 font-medium tracking-[0.2em] mb-4 text-sm">Digital Creative Developer</p>
+            <h1 class="text-5xl md:text-7xl font-bold mb-6">Halo, saya <br> <span class="gradient-text">Ahmad Iqbal</span></h1>
+            <p class="text-gray-400 mb-8">Landing Pahe • Company Profil • E-commerce • Dll</p>
+            <div class="flex flex-wrap justify-center md:justify-start gap-4">
+                <a href="#projects" class="bg-gradient-to-r from-purple-600 to-blue-600 px-8 py-4 rounded-full font-bold shadow-lg shadow-purple-500/20 hover:scale-105 transition">View Projects →</a>
+                <a href="#contact" class="glass-light px-8 py-4 rounded-full font-bold hover:bg-white/10 transition">Contact Me</a>
+            </div>
+        </div>
+        <div class="relative" data-aos="zoom-in" data-aos-delay="200">
+            <div class="absolute inset-0 bg-purple-500/20 blur-[100px] rounded-full"></div>
+            <img src="https://i.ibb.co.com/nN0WCnQh/IMG20260215205838.jpg" alt="AHMAD IQBAL" class="relative z-10 w-72 md:w-[380px] rounded-[40px] border border-white/10 grayscale hover:grayscale-0 transition duration-700 shadow-2xl">
+        </div>
+    </section>
 
-<div class="menu-toggle" id="menu-toggle">☰</div>
+    <section id="about" class="py-24 px-6 max-w-6xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+            <div data-aos="fade-up">
+                <h2 class="text-4xl font-bold mb-8">Tentang <span class="gradient-text">Saya</span></h2>
+                <p class="text-gray-400 leading-relaxed mb-6">
+                    Saya adalah <strong class="text-white"> Website Creation Services yang menjembatani fungsionalitas sistem dengan estetika visual. Saya tidak sekadar membangun website, tapi menciptakan aset digital yang responsif, cepat, dan dirancang khusus untuk memperkuat kehadiran bisnis Anda di dunia digital.
+                </p>
+                <div class="grid grid-cols-3 gap-4 mt-10">
+                    <div><h3 class="text-3xl font-bold">1+</h3><p class="text-xs text-gray-500">Tahun Pengalaman</p></div>
+                    <div><h3 class="text-3xl font-bold">20+</h3><p class="text-xs text-gray-500">Proyek Selesai</p></div>
+                    <div><h3 class="text-3xl font-bold text-purple-500">100%</h3><p class="text-xs text-gray-500">Kreativitas</p></div>
+                </div>
+            </div>
+            <div class="glass p-4 rounded-[40px]" data-aos="fade-left">
+                <img src="https://i.ibb.co.com/nN0WCnQh/IMG20260215205838.jpg" class="rounded-[30px] w-full" alt="About Ahmad Iqbal">
+            </div>
+        </div>
+    </section>
 
-<nav id="nav-menu">
-<a href="#about">About</a>
-<a href="#skills">Skills</a>
-<a href="#projects">Projects</a>
-<a href="#contact">Contact</a>
-</nav>
-</div>
-</header>
+    <section id="experience" class="py-24 px-6 bg-[#080808]">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-4xl font-bold mb-16 text-center">Kemampuan & <span class="gradient-text">Keahlian</span></h2>
+            <div class="space-y-10 border-l-2 border-purple-500/30 ml-4 md:ml-0">
+                <div class="relative pl-10" data-aos="fade-up">
+                    <div class="absolute -left-[11px] top-0 w-5 h-5 bg-purple-600 rounded-full border-4 border-[#050505]"></div>
+                    <div class="glass p-8 rounded-3xl hover:border-purple-500/50 transition duration-500">
+                        <span class="text-cyan-400 text-sm font-mono">2025 - 2026</span>
+                        <h4 class="text-xl font-bold mt-2">JASA PEMBUATAN WEBSITE</h4>
+                        <p>
+Saya membangun website menggunakan HTML, CSS, dan JavaScript untuk memastikan performa yang ringan, akses yang instan, serta struktur kode yang bersih. Dengan pendekatan custom coding, saya menjamin website Anda tidak hanya estetik secara visual, tetapi juga optimal di mata mesin pencari (SEO) dan responsif di seluruh perangkat.
+</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section class="hero">
-<div class="container hero-content">
-<h1>Hi, I'm <span>Ahmad Iqbal</span></h1>
-<p>Frontend Developer yang fokus membangun website modern, responsive, dan SEO friendly dengan clean code.</p>
+    <section id="projects" class="py-24 px-6 max-w-6xl mx-auto text-center">
+        <h2 class="text-4xl font-bold mb-16">Proyek Yang <span class="gradient-text">Dikerjakan</span></h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="glass overflow-hidden rounded-[30px] group" data-aos="flip-up">
+                <div class="h-52 bg-gray-900 relative overflow-hidden">
+                    <img src="https://i.ibb.co.com/wNpjkqc0/IMG-20260215-203436.jpg" class="group-hover:scale-110 transition duration-700 w-full h-full object-cover">
+                </div>
+                <div class="p-6 text-left">
+                    <span class="text-[10px] uppercase tracking-widest text-pink-500 font-bold">Jasa Website</span>
+                    <h4 class="text-xl font-bold mt-2 mb-3">Website Resmi Owner</h4>
+                </div>
+            </div>
+            <div class="glass overflow-hidden rounded-[30px] group" data-aos="flip-up" data-aos-delay="100">
+                <div class="h-52 bg-gray-900 relative overflow-hidden">
+                    <img src="https://i.ibb.co.com/Q7ZLpcKw/IMG-20260215-204219.jpg" class="group-hover:scale-110 transition duration-700 w-full h-full object-cover">
+                </div>
+                <div class="p-6 text-left">
+                    <span class="text-[10px] uppercase tracking-widest text-blue-500 font-bold">Web Class</span>
+                    <h4 class="text-xl font-bold mt-2 mb-3">Website Kelas</h4>
+                </div>
+            </div>
+            <div class="glass overflow-hidden rounded-[30px] group" data-aos="flip-up" data-aos-delay="200">
+                <div class="h-52 bg-gray-900 relative overflow-hidden">
+                    <img src="https://i.ibb.co.com/fYnpsdHx/IMG-20260215-204436.jpg" class="group-hover:scale-110 transition duration-700 w-full h-full object-cover">
+                </div>
+                <div class="p-6 text-left">
+                    <span class="text-[10px] uppercase tracking-widest text-purple-500 font-bold">Website Valentine</span>
+                    <h4 class="text-xl font-bold mt-2 mb-3">Valentine Days</h4>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<div class="hero-buttons">
-<a href="#projects" class="btn">View Projects</a>
-<a href="https://dzuraganstorev1.vercel.app/"
-target="_blank"
-class="btn-outline">
-  Order Project
-</a>
-</div>
-</div>
-</section>
+    <section id="contact" class="py-24 px-6 max-w-6xl mx-auto">
+        <div class="glass rounded-[50px] p-8 md:p-16 flex flex-col md:flex-row gap-12">
+            <div class="flex-1" data-aos="fade-right">
+                <h2 class="text-4xl font-bold mb-6">Hubungi <span class="gradient-text">Saya</span></h2>
+                <p class="text-gray-400 mb-10">Mari berkolaborasi untuk menciptakan solusi digital yang estetis dan fungsional.</p>
+                <div class="space-y-6 text-sm">
+                    <div class="flex items-center gap-4">
+                        <div class="p-3 bg-purple-500/10 rounded-xl text-purple-500">📧</div>
+                        <span>duniabisnisdigital18@gmail.com</span>
+                         <div class="p-3 bg-purple-500/10 rounded-xl text-purple-500">📧</div>
+                        <span>@a_bocillwbz  ( Instagram )</span>
+                         <div class="p-3 bg-purple-500/10 rounded-xl text-purple-500">📧</div>
+                        <span>081271617785  ( WhatsApp )</span>
+                    </div>
+                </div>
+            </div>
+        
+            </form>
+        </div>
+    </section>
 
-<section id="about" class="section">
-<div class="container">
-<h2 class="section-title">About Me</h2>
-<p>Saya membangun website cepat, modern dan scalable menggunakan HTML, CSS, dan JavaScript.</p>
-</div>
-</section>
-
-<section id="skills" class="section dark">
-<div class="container">
-<h2 class="section-title">Skills</h2>
-
-<div class="skill">
-<p>HTML</p>
-<div class="skill-bar"><div class="skill-fill html"></div></div>
-</div>
-
-<div class="skill">
-<p>CSS</p>
-<div class="skill-bar"><div class="skill-fill css"></div></div>
-</div>
-
-<div class="skill">
-<p>JavaScript</p>
-<div class="skill-bar"><div class="skill-fill js"></div></div>
-</div>
-
-</div>
-</section>
-
-<section id="projects" class="section">
-<div class="container">
-<h2 class="section-title">Projects</h2>
-
-<div class="grid">
-<div class="card">
-<h3>Company Profile</h3>
-<p>Website profesional untuk branding bisnis.</p>
-</div>
-
-<div class="card">
-<h3>Landing Page</h3>
-<p>Landing page high conversion & SEO ready.</p>
-</div>
-
-<div class="card">
-<h3>E-commerce UI</h3>
-<p>Design toko online modern & responsive.</p>
-</div>
-</div>
-</div>
-</section>
-
-<section id="contact" class="section dark">
-<div class="container">
-<h2 class="section-title">Contact</h2>
-<p>Email: duniabisnisdigital18@gmail.com</p>
-<p>Instagram: @a_bocillwbzz</p>
-</div>
-</section>
-
-<footer>
-© 2026 Nama Kamu. All rights reserved.
-</footer>
-
-<script>
-const toggle=document.getElementById("menu-toggle");
-const nav=document.getElementById("nav-menu");
-toggle.addEventListener("click",()=>{nav.classList.toggle("active");});
-</script>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
 </body>
   </html>
+          
