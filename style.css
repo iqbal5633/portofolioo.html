@@ -1,35 +1,118 @@
-/* Custom Styling */
-html {
-    scroll-behavior: smooth;
-}
+/* --- Penyesuaian Responsive (Desktop & Mobile) --- */
 
-body {
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    background-image: radial-gradient(circle at 10% 20%, rgba(168, 85, 247, 0.05) 0%, transparent 40%),
-                      radial-gradient(circle at 90% 80%, rgba(59, 130, 246, 0.05) 0%, transparent 40%);
-}
-
-.gradient-text {
-    background: linear-gradient(90deg, #a855f7, #3b82f6);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.glass {
-    background: rgba(10, 10, 10, 0.6);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.05);
-}
-
-.glass-light {
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-/* Responsif Adjustments */
-@media (max-width: 768px) {
+/* 1. Desktop & Layar Besar (Layar > 1024px) */
+@media (min-width: 1024px) {
+    .max-w-6xl {
+        padding: 0 2rem;
+    }
     h1 {
-        font-size: 2.5rem !important;
+        line-height: 1.1;
+    }
+    /* Efek hover khusus desktop untuk kartu proyek */
+    .group:hover .glass {
+        transform: translateY(-10px);
+        border-color: rgba(168, 85, 247, 0.4);
+        transition: all 0.3s ease;
+    }
+}
+
+/* 2. Tablet (Layar 769px - 1023px) */
+@media (max-width: 1023px) {
+    section {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+}
+
+/* 3. Mobile/HP (Layar < 768px) */
+@media (max-width: 768px) {
+    /* Header/Nav */
+    nav .glass {
+        width: 90%;
+        padding: 0.75rem 1.5rem;
+    }
+    
+    /* Typography */
+    h1 {
+        font-size: 2.8rem !important;
+        line-height: 1.2;
+        text-align: center;
+    }
+    
+    h2 {
+        font-size: 2rem !important;
+        text-align: center;
+    }
+
+    /* Hero Section */
+    #home {
+        flex-direction: column-reverse; /* Gambar di atas, teks di bawah */
+        text-align: center;
+        padding-top: 8rem;
+        gap: 2rem;
+    }
+
+    #home .max-w-xl {
+        text-align: center;
+    }
+
+    .flex-wrap {
+        justify-content: center !important;
+    }
+
+    /* Profile Image di HP */
+    #home img {
+        width: 240px;
+        border-radius: 30px;
+    }
+
+    /* About & Experience */
+    #about .grid, 
+    #contact .glass {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        padding: 2rem 1.5rem;
+    }
+
+    .space-y-10 {
+        margin-left: 0.5rem;
+    }
+
+    /* Stats (1+, 20+, 100%) agar tidak terlalu sempit */
+    #about .grid-cols-3 {
+        gap: 1rem;
+    }
+    
+    #about h3 {
+        font-size: 1.5rem;
+    }
+
+    /* Project Cards */
+    #projects .grid {
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+    }
+    
+    /* Contact Info */
+    #contact .flex.items-center {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+    }
+    
+    #contact .glass {
+        border-radius: 30px;
+    }
+}
+
+/* 4. HP Sangat Kecil (Layar < 400px) */
+@media (max-width: 400px) {
+    h1 {
+        font-size: 2.2rem !important;
+    }
+    
+    .btn-primary, a {
+        width: 100%; /* Tombol jadi full width agar mudah di-klik */
+        text-align: center;
     }
 }
